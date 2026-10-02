@@ -1,0 +1,130 @@
+﻿随包第三方组件与许可证清单
+==============================================================================
+
+本清单由构建时实机遍历 importlib.metadata 生成，对应当前包内实际存在的组件。
+生成时间（本机）：2026-10-01 23:36:48
+
+一、顶层运行时组件（非 Python 包）
+------------------------------------------------------------------------------
+1) Python 运行时 3.11.15
+   许可证：PSF-2.0（Python Software Foundation License Agreement）
+   原文：LICENSES\Python-3.11-PSF-LICENSE.txt （另有 python\LICENSE.txt 同源）
+   上游：https://www.python.org/
+
+2) PyMuPDF 1.28.2（含内置 MuPDF 引擎与 fitz 模块）
+   许可证：AGPL-3.0 或 Artifex 商业许可（双许可，本包按 AGPL-3.0 分发）
+   原文：LICENSES\PyMuPDF-AGPL-3.0.txt
+   说明：上游 wheel 内只带 64 字节的 COPYING 指针文件，未附 AGPL 全文，
+         故本包补入 GNU 官方 AGPL-3.0 全文。
+   上游：https://github.com/pymupdf/PyMuPDF  /  https://mupdf.com/
+
+3) FFmpeg 8.1.1（tools\ffmpeg.exe，gyan.dev essentials build，静态编译）
+   许可证：GPL-3.0-or-later（该构建启用了 --enable-gpl --enable-version3，
+           并链接 x264/x265 等 GPL 组件）
+   原文：LICENSES\FFmpeg-GPLv3.txt（上游 COPYING.GPLv3）、
+         LICENSES\FFmpeg-COPYING.GPLv3.txt（Chocolatey 包内 legal\LICENSE.txt）
+   构建信息：ffmpeg version 8.1.1-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+   configure：configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+   上游源码：https://git.ffmpeg.org/ffmpeg.git  /  https://ffmpeg.org/download.html
+
+二、Python 第三方包（共 36 个，实机 importlib.metadata 计数）
+------------------------------------------------------------------------------
+site-packages 合计：135.2 MB；python 运行时目录合计：187.2 MB
+
+包名                       版本             许可证（元数据声明）                                     许可证原文
+------------------------------------------------------------------------------
+aiohappyeyeballs         2.7.1          PSF-2.0                                        python-packages\aiohappyeyeballs-2.7.1\
+aiohttp                  3.14.3         Apache-2.0 AND MIT                             python-packages\aiohttp-3.14.3\
+aiosignal                1.4.0          Apache 2.0                                     python-packages\aiosignal-1.4.0\
+annotated-doc            0.0.5          MIT                                            python-packages\annotated-doc-0.0.5\
+annotated-types          0.8.0          MIT                                            python-packages\annotated-types-0.8.0\
+anyio                    4.15.1         MIT                                            python-packages\anyio-4.15.1\
+attrs                    26.1.0         MIT                                            python-packages\attrs-26.1.0\
+certifi                  2026.7.22      MPL-2.0                                        python-packages\certifi-2026.7.22\
+click                    8.5.0          BSD-3-Clause                                   python-packages\click-8.5.0\
+edge-tts                 7.2.8          GNU Lesser General Public License v3 (LGPLv3)  python-packages\edge-tts-7.2.8\
+fastapi                  0.141.1        MIT                                            python-packages\fastapi-0.141.1\
+frozenlist               1.8.0          Apache-2.0                                     python-packages\frozenlist-1.8.0\
+h11                      0.16.0         MIT                                            python-packages\h11-0.16.0\
+httptools                0.8.0          MIT                                            python-packages\httptools-0.8.0\
+idna                     3.20           BSD-3-Clause                                   python-packages\idna-3.20\
+multidict                6.9.1          Apache License 2.0                             python-packages\multidict-6.9.1\
+numpy                    2.4.6          BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0 python-packages\numpy-2.4.6\
+pillow                   12.3.0         MIT-CMU                                        python-packages\pillow-12.3.0\
+pip                      26.1.2         MIT                                            python-packages\pip-26.1.2\
+propcache                0.5.4          Apache-2.0                                     python-packages\propcache-0.5.4\
+PyAudioWPatch            0.2.12.8       Apache-2.0 license                             python-packages\PyAudioWPatch-0.2.12.8\
+pydantic                 2.13.5         MIT                                            python-packages\pydantic-2.13.5\
+pydantic_core            2.46.5         MIT                                            python-packages\pydantic_core-2.46.5\
+pymupdf                  1.28.2         Dual Licensed - GNU AFFERO GPL 3.0 or Artifex  PyMuPDF-AGPL-3.0.txt（见顶层，上游 wheel 未附全文）
+python-dotenv            1.2.3          BSD-3-Clause                                   python-packages\python-dotenv-1.2.3\
+python-multipart         0.0.32         Apache-2.0                                     python-packages\python-multipart-0.0.32\
+PyYAML                   6.0.3          MIT                                            python-packages\PyYAML-6.0.3\
+setuptools               82.0.1         MIT                                            python-packages\setuptools-82.0.1\
+starlette                1.6.0          BSD-3-Clause                                   python-packages\starlette-1.6.0\
+tabulate                 0.10.0         MIT                                            python-packages\tabulate-0.10.0\
+typing-inspection        0.4.4          MIT                                            python-packages\typing-inspection-0.4.4\
+typing_extensions        4.16.0         PSF-2.0                                        python-packages\typing_extensions-4.16.0\
+uvicorn                  0.53.0         BSD-3-Clause                                   python-packages\uvicorn-0.53.0\
+watchfiles               1.2.0          MIT                                            python-packages\watchfiles-1.2.0\
+websockets               17.1           BSD-3-Clause                                   python-packages\websockets-17.1\
+yarl                     1.25.1         Apache-2.0                                     python-packages\yarl-1.25.1\
+
+三、上游地址（逐包）
+------------------------------------------------------------------------------
+aiohappyeyeballs         2.7.1          https://github.com/aio-libs/aiohappyeyeballs
+aiohttp                  3.14.3         https://github.com/aio-libs/aiohttp
+aiosignal                1.4.0          https://github.com/aio-libs/aiosignal
+annotated-doc            0.0.5          https://github.com/fastapi/annotated-doc
+annotated-types          0.8.0          https://github.com/annotated-types/annotated-types
+anyio                    4.15.1         https://github.com/agronholm/anyio
+attrs                    26.1.0         https://tidelift.com/subscription/pkg/pypi-attrs?utm_source=pypi-attrs&utm_medium=pypi
+certifi                  2026.7.22      https://github.com/certifi/python-certifi
+click                    8.5.0          https://github.com/pallets/click/
+edge-tts                 7.2.8          https://github.com/rany2/edge-tts
+fastapi                  0.141.1        https://github.com/fastapi/fastapi
+frozenlist               1.8.0          https://github.com/aio-libs/frozenlist
+h11                      0.16.0         https://github.com/python-hyper/h11
+httptools                0.8.0          https://github.com/MagicStack/httptools
+idna                     3.20           https://github.com/kjd/idna
+multidict                6.9.1          https://github.com/aio-libs/multidict
+numpy                    2.4.6          https://numpy.org
+pillow                   12.3.0         https://tidelift.com/subscription/pkg/pypi-pillow?utm_source=pypi-pillow&utm_medium=pypi
+pip                      26.1.2         https://pip.pypa.io/
+propcache                0.5.4          https://github.com/aio-libs/propcache
+PyAudioWPatch            0.2.12.8       https://github.com/s0d3s/PyAudioWPatch/
+pydantic                 2.13.5         https://github.com/pydantic/pydantic
+pydantic_core            2.46.5         https://github.com/pydantic/pydantic
+pymupdf                  1.28.2         https://github.com/pymupdf/pymupdf
+python-dotenv            1.2.3          https://github.com/theskumar/python-dotenv
+python-multipart         0.0.32         https://github.com/Kludex/python-multipart
+PyYAML                   6.0.3          https://pyyaml.org/
+setuptools               82.0.1         https://github.com/pypa/setuptools
+starlette                1.6.0          https://github.com/Kludex/starlette
+tabulate                 0.10.0         https://github.com/astanin/python-tabulate
+typing-inspection        0.4.4          https://github.com/pydantic/typing-inspection
+typing_extensions        4.16.0         https://github.com/python/typing_extensions
+uvicorn                  0.53.0         https://uvicorn.dev/
+watchfiles               1.2.0          https://github.com/samuelcolvin/watchfiles
+websockets               17.1           https://github.com/python-websockets/websockets
+yarl                     1.25.1         https://github.com/aio-libs/yarl
+
+四、尚未查清的许可证事项
+------------------------------------------------------------------------------
+1) numpy 2.4.6 声明的许可证表达式为 'BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0'，
+   是多个许可证的集合；本包已复制其 dist-info\licenses\ 目录下全部 15 个许可证/声明文件，
+   但未逐个子目录逐一核对每份声明与二进制产物的对应关系。
+2) pip / setuptools 属打包工具，随运行时保留；其 _vendor 目录内捆绑了 18 份第三方许可证，
+   已整目录复制，但未逐个核对。
+3) aiohttp、httptools、propcache、yarl 等包内捆绑了 C 层 vendored 代码（llhttp、http-parser 等），
+   已随各自 dist-info\licenses\vendor\ 一并复制，未逐份核对。
+4) FFmpeg 静态构建内含的第三方库（x264/x265/aom/opus/gnutls 等）未在包内提供各自许可证全文；
+   已提供 FFmpeg 自身 GPLv3 全文与 gyan.dev 构建来源，逐库清单见
+   https://www.gyan.dev/ffmpeg/builds/#libraries 。
+5) 在线语音合成由 edge-tts（LGPLv3）通过微软 Edge 的公开朗读接口完成，
+   该接口的使用条款不是开源许可证问题，本包未就此做合规判断。
+
+五、权利声明
+------------------------------------------------------------------------------
+本包对 PyMuPDF / MuPDF 采用 AGPL-3.0 分支分发。按 AGPL-3.0 第 13 条，
+你（接收者）有权获得对应的完整源代码，获取方式见包根目录「开源说明.txt」。

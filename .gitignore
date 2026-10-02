@@ -1,0 +1,81 @@
+# 中间产物（体积大，不是源码）
+_demo_src/
+jobs/
+out_test/
+_before_render/
+_archive_v2/
+_qc/
+_audiotest/
+_unitcheck/
+hl_check/
+_fixed_out/
+_test_out/
+*.mp4
+*.wav
+
+# 二进制（很大，用脚本按需下载）
+bin/
+*.exe
+*.dll
+
+# 其他
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+
+# 语音、字幕、视频与日志：真实作业不要提交
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.wma
+*.avi
+*.mov
+*.mkv
+*.webm
+*.srt
+*.vtt
+*.log
+logs/
+out/
+outputs/
+*.pyo
+
+# 模型权重、下载缓存与本机凭据
+models/
+model/
+weights/
+checkpoints/
+.cache/
+.huggingface/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.gguf
+*.ggml
+*.bin
+.env
+.env.*
+!.env.example
+
+# 付费分发物、运行时和安装包不进入源码仓库
+portable/
+pdf-readalong-portable/
+python/
+tools/
+dist/
+build/
+*.zip
+*.7z
+*.rar
+*.msi
+
+# 发布准备时的机器记录与网页缓存
+.release-audit/
+.firecrawl/
