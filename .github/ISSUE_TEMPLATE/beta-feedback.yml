@@ -1,0 +1,56 @@
+name: 真实文档内测反馈 / Beta feedback
+description: 分享公开、非敏感的使用场景；不要上传真实客户文档和个人联系方式
+title: "[内测反馈] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢参与。本模板仅适合愿意公开反馈的 GitHub 用户。
+        不要提交保密文档、未授权内容、手机号、邮箱或其他个人信息。
+        如果使用在线语音，朗读文字可能被发送给语音服务。
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: 使用场景
+      options:
+        - 老师 / 讲义视频
+        - 自媒体 / 知识分享
+        - 企业培训
+        - 阅读论文、研报或财报
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: last_workflow
+    attributes:
+      label: 最近一次真实任务
+      description: 描述你最近一次处理类似文档的具体过程、用时、困难（不包含敏感信息）。
+      placeholder: "例：本月把两份讲义转成课程视频，原来需要分别配音和加字幕。"
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 实际使用频率
+      options:
+        - 每周多次
+        - 每周一次
+        - 每月一到三次
+        - 几乎不用
+    validations:
+      required: true
+  - type: textarea
+    id: trial
+    attributes:
+      label: 使用反馈、失败现象或下次想用的具体场景
+      placeholder: "如果还没有试用，请说明最想先验证哪个输出效果。"
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 提交确认
+      options:
+        - label: 我没有在本工单中公开保密资料、第三方版权材料或个人联系信息。
+          required: true
